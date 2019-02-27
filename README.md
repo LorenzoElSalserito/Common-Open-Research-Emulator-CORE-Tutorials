@@ -34,9 +34,9 @@ The configuration of this Tutorial is also available for download in [sources](s
     - 3.4 On your Workstation run `tcpdump -i $BRIFNAME`, you will see traffic from the _firewall_router_ like DHCP/BOOT and maybe some ARP request too.  Double click on _firewall_router_, it will open a terminal, see network the network interfaces and check its HWaddress, it's the same you get in the tcpdump stdout.
     ````
     # on your workstation
+    ***for a quickly overview of the devices is better to use " nmcli "***
     tcpdump -i $BRIFNAME
     tcpdump: verbose output suppressed, use -v or -vv for full protocol decode
-    for a quickly overview of the devices is better to use " nmcli "
     listening on b.42777.a7, link-type EN10MB (Ethernet), capture size 262144 bytes
     16:53:35.441144 IP 0.0.0.0.bootpc > 255.255.255.255.bootps: BOOTP/DHCP, Request from 00:00:00:aa:00:00 (oui Ethernet), length 300
     16:53:44.446805 IP 0.0.0.0.bootpc > 255.255.255.255.bootps: BOOTP/DHCP, Request from 00:00:00:aa:00:00 (oui Ethernet), length 300
